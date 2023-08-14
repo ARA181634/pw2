@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Tabla de Pitagoras en JavaScript</title>
+</head>
+<style>
+  table, th, td {
+    border: 1px solid black;
+    text-align: center;
+  }
+</style>
+<body>
+	<script type="text/javascript">         
+  function Tablas(){
+		var multiplicando=0;
+		var multiplicador=1;
+		var resu2=-1;
+		document.write("Tabla de Pitagoras en JavaScript");
+		document.write("<br>");
+		document.write("<table>");
+		for (multiplicando = 0; multiplicando <= 10 ; multiplicando++) {
+			document.write('<tr>' );
+			for (multiplicador = 0; multiplicador <= 10 ; multiplicador++) {
+				var resultado = multiplicando * multiplicador;
+				if(resultado==0){
+					resu2++;
+					if(resu2==11){
+						resu2=1;
+					}
+					document.write("<td>");
+					document.write( resu2);
+					document.write("</td>");
+				}else{
+					document.write("<td>");
+					document.write( resultado);
+					document.write("</td>");		
+				}	
+				
+			}
+			document.write('</tr>' );
+		}
+		document.write("</table>");
+		
+	}
+	Tablas();
+  	</script>
+	
+</body>
+</html>
